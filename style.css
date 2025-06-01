@@ -1,0 +1,56 @@
+header nav a{
+    color: red;
+}
+.bg h2{
+    background-color: rgb(6, 173, 207);
+    color: rgb(169, 27, 37);
+}
+header nav h2+div+p{
+    color: rgb(171, 104, 16);
+}
+a[href]{
+    color: red;
+    text-decoration: none;
+}
+a[class="active"]{
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+a[target="_self"]{
+    background-color: yellow;
+}
+p:last-of-type::after{
+    content: "...";
+}
+li::marker{
+    color: green;
+}
+p:nth-last-of-type(2)::first-letter{
+    color: red;
+    font-size: 30px;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.after_before::before{
+    content: "Pseuo - ";
+}
+.after_before::after{
+    content: " - Selector";
+}
+.parent{
+    border: 5px solid black;
+    width: 50%;
+    display: flex;
+    justify-content:center;
+}
+#pw{
+    background-color: rgb(37, 104, 227);
+    border-radius: 8%;
+    padding: 10px;
+}
+#pw:hover{
+    box-shadow: 10px 8px 10px 3px ; 
+}
